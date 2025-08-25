@@ -4,7 +4,7 @@ function App() {
 
   const initPay = (data) => {
     const options = {
-      key: "enter_you_key_id",
+      key: "rzp_test_R8NQEsn2VKxv3s",
       amount: 499,
       currency: "INR",
       name: "Nike",
@@ -31,7 +31,6 @@ function App() {
     try {
       const orderURL = "http://localhost:8080/orders";
       const { data } = await axios.post(orderURL, { amount: 499 });
-      console.log(data);
       initPay(data.data);
     } catch (error) {
       console.log(error);

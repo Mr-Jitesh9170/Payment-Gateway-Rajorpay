@@ -7,4 +7,4 @@ router.post("/orders", orderProduct)
 router.post("/verify", verifyPayments)
 
 
-module.exports = router;
+module.exports = router; 
